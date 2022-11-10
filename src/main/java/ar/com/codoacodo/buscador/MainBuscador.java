@@ -24,7 +24,7 @@ public class MainBuscador {
 		
 		//como recorro un array?
 		for(Articulo unArticulo : res ) {
-			unArticulo.detalle();
+			unArticulo.detalle();			
 		}
 	}
 
