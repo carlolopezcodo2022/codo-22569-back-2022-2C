@@ -63,5 +63,16 @@ public class Persona implements IHablar{
 		}
 		return existe;
 	}
+
+	public void decirAlgoEnTodosLosIdiomas(String algo) {
+		//dice algo SEGUROOOOOOO en el idoma nativo
+		this.idioma.decir(algo);
+		
+		for(IIdioma aux : this.otrosIdiomas) {
+			aux.decir(algo);
+		}
+	}
+	
+	
 	
 }// ctrl+sfhit+f
