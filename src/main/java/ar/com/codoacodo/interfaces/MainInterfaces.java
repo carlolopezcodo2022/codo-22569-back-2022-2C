@@ -1,6 +1,7 @@
 package ar.com.codoacodo.interfaces;
 
 import ar.com.codoacodo.idiomas.IHablar;
+import ar.com.codoacodo.idiomas.IIdioma;
 import ar.com.codoacodo.idiomas.Perro;
 import ar.com.codoacodo.idiomas.Persona;
 
@@ -11,8 +12,8 @@ public class MainInterfaces {
 		// e invoco el hablar de cada una
 		
 		//Clase nombreObjeto = new Clase();
-		
-		Persona p = new Persona("pilar", "ingles");		
+		IIdioma ingles = new Ingles();
+		Persona p = new Persona("pilar", ingles);		
 		Perro patan = new Perro("patan");
 		
 		//por implementar IHablar las dos instancias
@@ -33,6 +34,6 @@ public class MainInterfaces {
 		i.hablar();
 		
 		Persona pDentroDei = (Persona)i;		
-		pDentroDei.decir("hola","ingles");//??
+		pDentroDei.decir("hola",ingles);//??
 	}
 }
