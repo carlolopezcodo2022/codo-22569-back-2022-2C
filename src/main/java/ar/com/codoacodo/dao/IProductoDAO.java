@@ -1,5 +1,7 @@
 package ar.com.codoacodo.dao;
 
+import java.util.List;
+
 import ar.com.codoacodo.domain.Producto;
 
 public interface IProductoDAO {
@@ -9,18 +11,18 @@ public interface IProductoDAO {
 	public Producto getById(Long id) throws Exception;
 	//select * from producto where id = id
 	
-	public Producto[] findAll();
+	public List<Producto> findAll() throws Exception;
 	//select * from producto
 	
-	public void delete(Long id);
+	public void delete(Long id) throws Exception;
 	//delete from producto where id = id
 	
-	public void update(Producto producto);
+	public void update(Producto producto) throws Exception;
 	//update producto 
 	//set campo1 = valor1.....
 	//where id = producto.id
 	
-	public void create(Producto newProduct);
+	public void create(Producto newProduct) throws Exception;
 	//insert into producto (campo1, ....m campoN)
 	//values(newProducto.campo1, ...newProducto.campoN)
 	
