@@ -5,8 +5,10 @@
 	</head>
 	<body>
 		<jsp:include page="navbar.jsp"/>
+		
 		<main class="container">
 			<h1>Nuevo Producto</h1>
+			<jsp:include page="mensajeria.jsp"/>
 			<div class="row">
 				<div class="col-12">
 					<form class="row g-3 needs-validation" novalidate

@@ -12,6 +12,7 @@
 		<jsp:include page="navbar.jsp"/>
 		<main class="container">
 			<h1>Listado de Producto</h1>
+			<jsp:include page="mensajeria.jsp"/>
 			<section>
 				<table class="table">
 				  <thead>
